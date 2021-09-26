@@ -1,11 +1,14 @@
 package com.lyndexter.card_statistic_api.models;
 
 import lombok.Data;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Data
+@Entity
 public class Transaction {
 
-  private String id;
+  @Id private String id;
   private int time;
   private String description;
   private int mcc;
@@ -17,5 +20,7 @@ public class Transaction {
   private int cashbackAmount;
   private int balance;
   private boolean hold;
+  private String comment;
   private String receiptId;
+  private String counter_iban;
 }
