@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "lyndexter.bank-token",
+      "type": "java.lang.String",
+      "description": "Bank token to check card info."
+  }
+] }
